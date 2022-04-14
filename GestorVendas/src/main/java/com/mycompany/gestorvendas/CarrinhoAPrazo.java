@@ -1,13 +1,12 @@
 package com.mycompany.gestorvendas;
 
-public class CarrinhoAPrazoNormal extends CarrinhoCompras{
+public class CarrinhoAPrazo 
+        extends CarrinhoCompras{
+    
     private int parcelas;
-   
-    public CarrinhoAPrazoNormal(int parcelas){
-        super(new FormaDeEntregaNormal());
+    public CarrinhoAPrazo(int parcelas){
         this.parcelas = parcelas;
     }
-    
     @Override
     public double calcularVariacao() {
         if (parcelas <= 3) return -0.02;

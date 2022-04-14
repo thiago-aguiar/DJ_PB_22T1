@@ -1,8 +1,10 @@
 package unit;
 
-import com.mycompany.gestorvendas.CarrinhoAPrazoNormal;
+import com.mycompany.gestorvendas.FormaDeEntregaExpressa;
+import com.mycompany.gestorvendas.CarrinhoAPrazo;
 import com.mycompany.gestorvendas.CarrinhoAVistaExpressa;
-import com.mycompany.gestorvendas.CarrinhoAVistaNormal;
+import com.mycompany.gestorvendas.CarrinhoAVista;
+import com.mycompany.gestorvendas.FormaDeEntregaNormal;
 import com.mycompany.gestorvendas.Produto;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
@@ -16,8 +18,9 @@ public class CalculoDeVendasUnitTest {
     public void DeveRetornar110ParaCompraAVistaNormalDe100(){
         // Arrumação
         Produto produto = new Produto("Nome", "Marca", 100.00);
-        CarrinhoAVistaNormal carrinho = new CarrinhoAVistaNormal();
+        CarrinhoAVista carrinho = new CarrinhoAVista();
         carrinho.addProduto(produto);
+        carrinho.setFormaDeEntrega(new FormaDeEntregaNormal());
         
         // Ação
         double desconto = carrinho.calcularVariacao();
@@ -37,8 +40,9 @@ public class CalculoDeVendasUnitTest {
     @Test
     public void DeveRetornar198ParaCompraAVistaNormalDe200(){
         Produto produto = new Produto("Nome", "Marca", 200.00);
-        CarrinhoAVistaNormal carrinho = new CarrinhoAVistaNormal();
+        CarrinhoAVista carrinho = new CarrinhoAVista();
         carrinho.addProduto(produto);
+        carrinho.setFormaDeEntrega(new FormaDeEntregaNormal());
         
         double desconto = carrinho.calcularVariacao();
         double entrega = carrinho.calcularEntrega();
@@ -57,8 +61,9 @@ public class CalculoDeVendasUnitTest {
     @Test
     public void DeveRetornar280ParaCompraAVistaNormalDe300(){
         Produto produto = new Produto("Nome", "Marca", 300.00);
-        CarrinhoAVistaNormal carrinho = new CarrinhoAVistaNormal();
+        CarrinhoAVista carrinho = new CarrinhoAVista();
         carrinho.addProduto(produto);
+        carrinho.setFormaDeEntrega(new FormaDeEntregaNormal());
         
         double desconto = carrinho.calcularVariacao();
         double entrega = carrinho.calcularEntrega();
@@ -73,12 +78,13 @@ public class CalculoDeVendasUnitTest {
     // desconto     5,00
     // entrega      30,00
     // total venda  125,00
-    // @Test
-    /*public void DeveRetornar125ParaCompraAVistaExpressaDe100(){
+    @Test
+    public void DeveRetornar125ParaCompraAVistaExpressaDe100(){
         // Arrumação
         Produto produto = new Produto("Nome", "Marca", 100.00);
-        CarrinhoAVistaExpressa carrinho = new CarrinhoAVistaExpressa();
+        CarrinhoAVista carrinho = new CarrinhoAVista();
         carrinho.addProduto(produto);
+        carrinho.setFormaDeEntrega(new FormaDeEntregaExpressa());
         
         // Ação
         double desconto = carrinho.calcularVariacao();
@@ -89,7 +95,7 @@ public class CalculoDeVendasUnitTest {
         assertEquals(0.05, desconto);
         assertEquals(30.00, entrega);
         assertEquals(125.00, total);
-    }*/
+    }
     
     // Prazo Entrega Normal
     // Compra de    100,00
@@ -100,8 +106,9 @@ public class CalculoDeVendasUnitTest {
     @Test
     public void DeveRetornar117ParaCompraAPrazoNormalDe100Em3x(){
         Produto produto = new Produto("Nome", "Marca", 100.00);
-        CarrinhoAPrazoNormal carrinho = new CarrinhoAPrazoNormal(3);
+        CarrinhoAPrazo carrinho = new CarrinhoAPrazo(3);
         carrinho.addProduto(produto);
+        carrinho.setFormaDeEntrega(new FormaDeEntregaNormal());
         
         double acrescimo = carrinho.calcularVariacao();
         double entrega = carrinho.calcularEntrega();

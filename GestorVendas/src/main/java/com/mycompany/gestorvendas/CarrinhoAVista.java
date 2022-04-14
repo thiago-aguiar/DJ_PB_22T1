@@ -1,10 +1,7 @@
 package com.mycompany.gestorvendas;
 
-public class CarrinhoAVistaNormal extends CarrinhoCompras{
-    
-    public CarrinhoAVistaNormal() {
-        super(new FormaDeEntregaNormal());
-    }
+public class CarrinhoAVista 
+        extends CarrinhoCompras{
     
     @Override
     public double calcularVariacao() {

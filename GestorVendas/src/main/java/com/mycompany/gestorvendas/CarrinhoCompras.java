@@ -8,9 +8,13 @@ import java.util.List;
 
 public abstract class CarrinhoCompras {
     List<Produto> produtos = new ArrayList<>();
-    private FormaDeEntrega formaDeEntrega;
+    private FormaDeEntrega formaDeEntrega = new FormaDeEntregaNormal();
     // Construtor
-    public CarrinhoCompras(FormaDeEntrega formaDeEntrega){
+//    public CarrinhoCompras(FormaDeEntrega formaDeEntrega){
+//        this.formaDeEntrega = formaDeEntrega;
+//    }
+    
+    public void setFormaDeEntrega(FormaDeEntrega formaDeEntrega){
         this.formaDeEntrega = formaDeEntrega;
     }
       
