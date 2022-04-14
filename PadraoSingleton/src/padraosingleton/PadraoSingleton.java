@@ -4,22 +4,32 @@ public class PadraoSingleton {
 
     public static void main(String[] args) {
         
-        var connect = new Connect();
+        var connect = Connect.getInstancia();
         
         connect.addNome("Fulano");
         connect.addNome("Beltrano");
         connect.addNome("Ciclano");
         
-        var connect2 = new Connect();
+        System.out.println(connect.getNome(2));
+        
+        var connect2 = Connect.getInstancia();
         
         connect2.addNome("Fulano");
         connect2.addNome("Beltrano");
         connect2.addNome("Ciclano");
         
-        System.out.println(connect.nomes.size());
-        System.out.println(connect2.nomes.size());
         
+        connect2.updateNome(2, "Thiago");
+        System.out.println(connect2.getNome(2));
+        System.out.println(connect2.getNome(3));
         
+        var listaNomes = connect2.getNomes();
+        listaNomes.clear();
+        
+        System.out.println(connect2.verificarQuantidade());
+        System.out.println(connect2.deleteNome("Thiago"));
+        System.out.println(connect2.verificarQuantidade());
+        
+        System.out.println(connect2.getNome(4));
     }
-    
 }
