@@ -1,10 +1,9 @@
-package com.mycompany.gestorvendas;
+package com.mycompany.gestorvendas.Entrega;
 
 public class FormaDeEntregaNormal 
         implements FormaDeEntrega {
 
     public FormaDeEntregaNormal() {
-        
     }
    
     @Override

@@ -1,4 +1,4 @@
-package com.mycompany.gestorvendas;
+package com.mycompany.gestorvendas.carrinho;
 
 public class CarrinhoAPrazo 
         extends CarrinhoCompras{

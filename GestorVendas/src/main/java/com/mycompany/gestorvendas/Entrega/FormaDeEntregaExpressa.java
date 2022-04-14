@@ -1,6 +1,6 @@
-package com.mycompany.gestorvendas;
+package com.mycompany.gestorvendas.Entrega;
 
-import com.mycompany.gestorvendas.FormaDeEntrega;
+import com.mycompany.gestorvendas.Entrega.FormaDeEntrega;
 
 public class FormaDeEntregaExpressa 
         implements FormaDeEntrega {

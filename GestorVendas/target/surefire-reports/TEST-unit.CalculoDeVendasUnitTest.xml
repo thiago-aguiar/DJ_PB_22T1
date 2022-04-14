@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="unit.CalculoDeVendasUnitTest" time="0.031" tests="4" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="unit.CalculoDeVendasUnitTest" time="0.044" tests="5" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="16"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -16,7 +16,7 @@
     <property name="user.country" value="US"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-16.0.2\bin"/>
-    <property name="sun.java.command" value="C:\Users\THIAGO~1.AGU\AppData\Local\Temp\surefire8392010210021930802\surefirebooter12358795421472249945.jar C:\Users\thiago.aguiar\AppData\Local\Temp\surefire8392010210021930802 2022-04-14T17-03-29_464-jvmRun1 surefire13643935645092856407tmp surefire_011047272925429630279tmp"/>
+    <property name="sun.java.command" value="C:\Users\THIAGO~1.AGU\AppData\Local\Temp\surefire3549596982922847074\surefirebooter17166807312648405358.jar C:\Users\thiago.aguiar\AppData\Local\Temp\surefire3549596982922847074 2022-04-14T17-19-33_691-jvmRun1 surefire8912679526372517739tmp surefire_03484747322277613259tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\thiago.aguiar\Documents\NetBeansProjects\GestorVendas\target\test-classes;C:\Users\thiago.aguiar\Documents\NetBeansProjects\GestorVendas\target\classes;C:\Users\thiago.aguiar\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.6.0\junit-jupiter-api-5.6.0.jar;C:\Users\thiago.aguiar\.m2\repository\org\apiguardian\apiguardian-api\1.1.0\apiguardian-api-1.1.0.jar;C:\Users\thiago.aguiar\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\thiago.aguiar\.m2\repository\org\junit\platform\junit-platform-commons\1.6.0\junit-platform-commons-1.6.0.jar;C:\Users\thiago.aguiar\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.6.0\junit-jupiter-params-5.6.0.jar;C:\Users\thiago.aguiar\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.6.0\junit-jupiter-engine-5.6.0.jar;C:\Users\thiago.aguiar\.m2\repository\org\junit\platform\junit-platform-engine\1.6.0\junit-platform-engine-1.6.0.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -31,7 +31,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\THIAGO~1.AGU\AppData\Local\Temp\surefire8392010210021930802\surefirebooter12358795421472249945.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\THIAGO~1.AGU\AppData\Local\Temp\surefire3549596982922847074\surefirebooter17166807312648405358.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="16.0.2+7-67"/>
@@ -58,8 +58,9 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="60.0"/>
   </properties>
-  <testcase name="DeveRetornar117ParaCompraAPrazoNormalDe100Em3x" classname="unit.CalculoDeVendasUnitTest" time="0.022"/>
-  <testcase name="DeveRetornar198ParaCompraAVistaNormalDe200" classname="unit.CalculoDeVendasUnitTest" time="0"/>
-  <testcase name="DeveRetornar110ParaCompraAVistaNormalDe100" classname="unit.CalculoDeVendasUnitTest" time="0"/>
+  <testcase name="DeveRetornar117ParaCompraAPrazoNormalDe100Em3x" classname="unit.CalculoDeVendasUnitTest" time="0.027"/>
+  <testcase name="DeveRetornar198ParaCompraAVistaNormalDe200" classname="unit.CalculoDeVendasUnitTest" time="0.001"/>
+  <testcase name="DeveRetornar125ParaCompraAVistaExpressaDe100" classname="unit.CalculoDeVendasUnitTest" time="0.002"/>
+  <testcase name="DeveRetornar110ParaCompraAVistaNormalDe100" classname="unit.CalculoDeVendasUnitTest" time="0.001"/>
   <testcase name="DeveRetornar280ParaCompraAVistaNormalDe300" classname="unit.CalculoDeVendasUnitTest" time="0.001"/>
 </testsuite>

@@ -1,10 +1,9 @@
 package unit;
 
-import com.mycompany.gestorvendas.FormaDeEntregaExpressa;
-import com.mycompany.gestorvendas.CarrinhoAPrazo;
-import com.mycompany.gestorvendas.CarrinhoAVistaExpressa;
-import com.mycompany.gestorvendas.CarrinhoAVista;
-import com.mycompany.gestorvendas.FormaDeEntregaNormal;
+import com.mycompany.gestorvendas.Entrega.FormaDeEntregaExpressa;
+import com.mycompany.gestorvendas.carrinho.CarrinhoAPrazo;
+import com.mycompany.gestorvendas.carrinho.CarrinhoAVista;
+import com.mycompany.gestorvendas.Entrega.FormaDeEntregaNormal;
 import com.mycompany.gestorvendas.Produto;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;

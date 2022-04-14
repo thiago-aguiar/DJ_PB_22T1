@@ -1,7 +1,7 @@
-C:\Users\thiago.aguiar\Documents\NetBeansProjects\GestorVendas\src\main\java\com\mycompany\gestorvendas\CarrinhoAVistaExpressa.java
-C:\Users\thiago.aguiar\Documents\NetBeansProjects\GestorVendas\src\main\java\com\mycompany\gestorvendas\CarrinhoAVistaNormal.java
+C:\Users\thiago.aguiar\Documents\NetBeansProjects\GestorVendas\src\main\java\com\mycompany\gestorvendas\Entrega\FormaDeEntregaExpressa.java
 C:\Users\thiago.aguiar\Documents\NetBeansProjects\GestorVendas\src\main\java\com\mycompany\gestorvendas\Produto.java
-C:\Users\thiago.aguiar\Documents\NetBeansProjects\GestorVendas\src\main\java\com\mycompany\gestorvendas\FormaDeEntregaNormal.java
-C:\Users\thiago.aguiar\Documents\NetBeansProjects\GestorVendas\src\main\java\com\mycompany\gestorvendas\FormaDeEntrega.java
-C:\Users\thiago.aguiar\Documents\NetBeansProjects\GestorVendas\src\main\java\com\mycompany\gestorvendas\CarrinhoAPrazoNormal.java
-C:\Users\thiago.aguiar\Documents\NetBeansProjects\GestorVendas\src\main\java\com\mycompany\gestorvendas\CarrinhoCompras.java
+C:\Users\thiago.aguiar\Documents\NetBeansProjects\GestorVendas\src\main\java\com\mycompany\gestorvendas\Entrega\FormaDeEntrega.java
+C:\Users\thiago.aguiar\Documents\NetBeansProjects\GestorVendas\src\main\java\com\mycompany\gestorvendas\carrinho\CarrinhoCompras.java
+C:\Users\thiago.aguiar\Documents\NetBeansProjects\GestorVendas\src\main\java\com\mycompany\gestorvendas\carrinho\CarrinhoAVista.java
+C:\Users\thiago.aguiar\Documents\NetBeansProjects\GestorVendas\src\main\java\com\mycompany\gestorvendas\Entrega\FormaDeEntregaNormal.java
+C:\Users\thiago.aguiar\Documents\NetBeansProjects\GestorVendas\src\main\java\com\mycompany\gestorvendas\carrinho\CarrinhoAPrazo.java

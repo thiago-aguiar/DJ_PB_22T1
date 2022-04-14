@@ -1,5 +1,8 @@
-package com.mycompany.gestorvendas;
+package com.mycompany.gestorvendas.carrinho;
 
+import com.mycompany.gestorvendas.Entrega.FormaDeEntrega;
+import com.mycompany.gestorvendas.Entrega.FormaDeEntregaNormal;
+import com.mycompany.gestorvendas.Produto;
 import java.util.ArrayList;
 import java.util.List;
 
